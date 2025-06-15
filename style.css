@@ -146,7 +146,6 @@ h5 {
 
 .link-btn {
   background-color: rgb(67, 163, 230);
-
   font-family: Roboto Condensed;
   font-size: 2em;
   letter-spacing: 0.5px;
@@ -162,9 +161,23 @@ h5 {
   color: white;
 }
 
+.structure {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .service-box {
   font-size: 1.7em;
   text-align: center;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 500px;
+  margin: 3rem;
 }
 
 .service-box img {
