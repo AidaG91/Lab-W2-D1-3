@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
 
+*,
 html,
 body {
   margin: 0;
@@ -59,7 +60,6 @@ h5 {
 .nav-bar li a {
   text-decoration: none;
   color: white;
-
   font-size: 2em;
 }
 
@@ -107,10 +107,6 @@ h5 {
   position: relative;
   top: 200px;
   margin-left: 3rem;
-}
-
-.quote q {
-  font-style: italic;
 }
 
 .quote p {
@@ -193,10 +189,95 @@ h5 {
   font-size: 1.5em;
   font-weight: 700;
 }
+#team {
+  padding: 2rem;
+}
+
+#team h3 {
+  margin: 0;
+}
+
+#team p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+#team hr {
+  width: 40%;
+  margin: auto;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
 
 #team img {
-  width: 250px;
-  height: 180px;
+  width: 400px;
+  height: 270px;
+}
+
+#schedule {
+  padding: 2rem;
+}
+#schedule h3 {
+  margin: 0;
+  padding: 2rem;
+}
+
+.week-schedule {
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#schedule td,
+#schedule th {
+  padding: 0 15px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  width: 500px;
+  max-width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.reserve-slot button {
+  align-self: center;
+  background-color: white;
+  font-size: 0.8em;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
 }
 
 .footer {
@@ -207,6 +288,7 @@ h5 {
 .address {
   font-style: normal;
   font-size: 0.8em;
+  margin-bottom: 2rem;
 }
 
 .footer a {
@@ -216,4 +298,16 @@ h5 {
 
 .footer ul {
   list-style: none;
+  text-align: center;
+}
+
+.foot-division {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+#footer h5 {
+  margin: 0;
 }
